@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'menu/style.css' %}">
+  <script src="{% static 'menu/menu.js' %}"></script>
+  <title>Kein Problem</title>
+</head>
+
+<body>
+  <header>
+    <h1>Kein Problem</h1>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="{% url 'menu:index' %}">Home</a></li>
+          <li><a href="#">Learning goals</a></li>
+          <li><a href="#">Add vocab</a></li>
+          <li><a href="{% url 'menu:dQuiz' %}">der die das Quiz</a></li>
+          <li><a href="#">Difficult words</a></li>
+          <li><a href="#">Vocab themes</a></li>
+          <li><a href="#">Usefull links</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="content">
+
+
+
+      {% block cialo %}
+      {% endblock %}
+
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: nonsense@gmail.com | © 2025 KeinProblem</p>
+  </footer>
+
+</body>

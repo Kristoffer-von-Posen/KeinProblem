@@ -1,0 +1,24 @@
+{% extends "menu/wzor.html" %}
+
+{% block cialo %}
+      
+<h2>Der, die or das??? Versuchen Sie zu erraten!!!</h2>
+
+<div>
+
+  {% for i in Btwo %}
+        {% if i.qnu == 20 and i.day == 1 and i.week == 1 %}
+   <h1>{{i.deu}}</h1>
+        {% endif %}
+  {% endfor %}
+
+
+<button class="QuizBu" onclick = "DerDieDas(1)" >DER</button>
+<button class="QuizBu" onclick = "DerDieDas(2)" >DIE</button>
+<button class="QuizBu" onclick = "DerDieDas(3)" >DAS</button>
+            
+</div>
+     
+
+
+{% endblock %}
