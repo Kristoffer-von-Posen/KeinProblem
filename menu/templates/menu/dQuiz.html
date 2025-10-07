@@ -1,6 +1,7 @@
 {% extends "menu/wzor.html" %}
 
 {% block cialo %}
+
       
 <h2>Der, die or das??? Versuchen Sie zu erraten!!!</h2>
 
@@ -13,12 +14,15 @@
   {% endfor %}
 
 
-<button class="QuizBu" onclick = "DerDieDas(1)" >DER</button>
-<button class="QuizBu" onclick = "DerDieDas(2)" >DIE</button>
-<button class="QuizBu" onclick = "DerDieDas(3)" >DAS</button>
+<button class="QuizBu">DER</button>
+<button class="QuizBu">DIE</button>
+<button class="QuizBu" >DAS</button>
+<button id="senreq">TEST</button>
+<div id="Empfenger">???</div>
             
 </div>
-     
+
+  
 
 
 {% endblock %}

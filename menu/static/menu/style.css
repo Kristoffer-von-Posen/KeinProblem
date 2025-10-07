@@ -94,7 +94,7 @@ ol, ul
 /* Quiz der die das */
 
 
-.QuizBu
+.QuizBu, #Empfenger, #senreq
 {
   margin: 20px;
   padding: 40px;

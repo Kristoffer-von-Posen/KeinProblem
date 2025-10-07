@@ -1,19 +1,5 @@
 
 
-// Quiz der die das
-
-function DerDieDas(x)
-{
-    if (x == 1)
-    {
-        alert("Correct");
-    }
-    else
-    {
-        alert("Incorrect");
-    }
-}
-
 function showWords(day, week)
     {
         const words = document.querySelectorAll('.words');
